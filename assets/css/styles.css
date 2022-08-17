@@ -6,13 +6,13 @@
     background-color: #032D83;
     color: white;
 }
-.navbar {
+/* body {
     background-image: linear-gradient(to right, #0058ee, #008cff, #00aff2, #00cac9, #52dfa4, #84e8a8, #a9f1af, #c9faba, #bcfdcf, #b6ffe2, #b7fff2, #bffffe);
    
-}
+} */
 
 .nav-link {
-    color: black !important;
+  
     font-weight: bold;
 }
 
