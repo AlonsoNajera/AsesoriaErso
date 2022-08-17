@@ -1,53 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/card.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="assets/js/main.js"></script>
+
     <title>Asesoria ERSO</title>
-
-
-
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Asesoria ERSO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mision y Vision</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="#">Asesoria ERSO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#misionvision">Mision y Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quienessomos">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-primary btn-lg">Inicio Portal</button>
+      </div>
+    </nav>
 
-      <div class="jumbotron">
-        <div class="container">
-          <img class="img_logo" src="assets/images/logo-innova-gas.jpg" alt="" srcset="">
-          <p></p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Inicio Portal</a></p>
+    <section class="main">
+      <div id="container-slider">
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"
+          ><i class="fas fa-chevron-circle-left"></i
+        ></a>
+        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"
+          ><i class="fas fa-chevron-circle-right"></i
+        ></a>
+        <ul class="listslider">
+          <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+          <li><a itlist="itList_1" href="#"></a></li>
+          <li><a itlist="itList_2" href="#"></a></li>
+          <li><a itlist="itList_3" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+          <li
+            style="
+              background-image: url('assets/images/logo-innova-gas.jpg');
+              z-index: 0;
+              opacity: 1;
+            "
+          >
+            <div class="content_slider">
+              <div>
+                <!-- <h2>INICIO PORTAL</h2> -->
+                <p>Da Clic e inicion sesion</p>
+                <a href="#" class="btnSlider">INICIAR PORTAL</a>
+              </div>
+            </div>
+          </li>
+          <li style="background-image: url('assets/images/pitayo.png')"></li>
+          <li style="background-image: url('assets/images/pitayo.png')"></li>
+          <li
+            style="background-image: url('images/carrousel/Slider4.jpeg')"
+          ></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="jumbotron" id="quienessomos">
+      <div class="container">
+        <h1>Quienes Somos</h1>
+        <img
+          class="img_logo"
+          src="assets/images/logo-innova-gas.jpg"
+          alt=""
+          srcset=""
+        />
+        <p>
+          ´Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+          aliquam quidem odit rem iste, voluptates dolor nostrum neque. Earum
+          omnis, ex voluptas quisquam consequuntur distinctio ea soluta magnam
+          nemo et.
+        </p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Inicio Portal</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="misionvision" class="misionvision">
+      <div class="titulo"></div>
+      <div class="row1-container">
+        <div class="box box-down cyan">
+          <h2>Mision</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            itaque nobis aut rem quas adipisci voluptatem, accusamus voluptates
+            laboriosam unde totam maiores aliquid earum, exercitationem dicta,
+            vitae praesentium perferendis ut?
+          </p>
+          <img class="img" src="assets/images/GamaBaja.jpg" alt="" />
+        </div>
+
+        <div class="box red">
+          <h2>Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+            dicta odit dignissimos minus dolor harum dolores omnis sunt veniam
+            similique nesciunt animi quaerat iure amet corrupti, consequatur
+            nulla assumenda labore?
+          </p>
+          <img class="img" src="assets/images/GamaMedia.jpg" alt="" />
+        </div>
+
+        <div class="box box-down blue">
+          <h2>Valores</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae
+            optio ipsa numquam, rerum voluptas, ipsum provident deleniti illum
+            ratione accusamus reiciendis qui nesciunt praesentium necessitatibus
+            laboriosam cum eius ad?
+          </p>
+          <img class="img" src="assets/images/GamaAlta.jpg" alt="" />
         </div>
       </div>
-    
-</body>
+    </div>
+
+
+
+    <footer>
+      <div class="container">
+          <div class="footer-top">
+              <div class="row">
+                  <div class="col-md-6 col-lg-3 about-footer">
+                      <h3>Direccion </h3>
+                      <ul>
+                          <li><a href="#"><i class="fas fa-phone fa-flip-horizontal"></i>Tel. 618111111</a></li>
+                          <li><i class="fas fa-map-marker-alt"></i>
+                              Direccion
+                              <br/>Lorem Ipsum,
+                              <br/>LIC 3201
+                          </li>
+                      </ul>
+                      
+                  </div>
+                  <div class="col-md-6 col-lg-2 page-more-info">
+                      <div class="footer-title">
+                          <h4>Page links</h4>
+                      </div>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Mision y Vision</a></li>
+                          <li><a href="#">Quienes Somos</a></li>
+                          <li><a href="#">Servicios</a></li>
+                          <li><a href="#">Contacto</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 open-hours">
+                      <div class="footer-title">
+                          <h4>Horario Atencion</h4>
+                          <ul class="footer-social">
+                              <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                              <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+  
+                          </ul>
+                      </div>
+                      <table class="table colortable">
+                          <tbody>
+                              <tr>
+                                  <td><i class="far fa-clock"></i>Lunes-Viernes</td>
+                                  <td>9:00am - 6:00pm</td>
+                              </tr>
+                              <tr>
+                                  <td><i class="far fa-clock"></i>Sabado</td>
+                                  <td>9:00am - 2:00pm</td>
+                              </tr>
+                              <tr>
+                                  <td><i class="far fa-clock"></i>Domingo</td>
+                                  <td>Descanso</td>
+                              </tr>                          </tbody>
+                      </table>
+                      <hr>
+                      <div class="footer-logo">
+  
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                  <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                  <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                  <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                  <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                          </tbody>
+                      </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="footer-bottom">
+              <div class="row">
+                  <div class="col-sm-4">
+                      <a href="">Derechos Reservados</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body>
 </html>
+<script src="assets/js/carrouse.js"></script>
