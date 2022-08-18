@@ -201,6 +201,8 @@ footer .table td {
 }
 .footer-logo td {
   padding-right: 4px !important;
+  width: 100px;
+  height: 100px;
 }
 
 .footer-logo td:last-child {
